@@ -15,9 +15,15 @@ var people = require("./app/data/friends.js");
 // Routes
 // =============================================================
 
-var routes = require("./app/routing/htmlRoutes.js");
+var htmlRoutes = require("./app/routing/htmlRoutes.js");
 
-app.use(routes);
+app.use(htmlRoutes);
+
+var apiRoutes = require("./app/routing/apiRoutes.js");
+
+app.use(apiRoutes);
+
+
 
 // Displays all characters
 app.get("/api/friends", function(req, res) {

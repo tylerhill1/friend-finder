@@ -3,6 +3,8 @@ var path = require("path");
 var reqPath = path.join(__dirname, '../');
 console.log(reqPath);
 
+var people = require("../data/friends.js");
+
 var router = express.Router();
 
 // Displays all characters

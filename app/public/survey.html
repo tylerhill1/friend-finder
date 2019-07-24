@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend-finder Survey</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Friend Finder</h1>
+      <h3>Take this survey to find a friend</h3>
+      <hr>
+      <a href="/api/characters"><button class="btn btn-danger btn-lg"><span
+            class="fa fa-eye"></span> All People</button></a>
+    </div>
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3><strong>Survey</strong></h3>
+          </div>
+          <div class="card-body">
+            <h3><strong>Name (Required)</strong></h3>
+            <input type="text" id="newName" class="form-control">
+            <br>
+            <h3><strong>Link to Photo Image (Required)</strong></h3>
+            <input type="text" id="newPhoto" class="form-control">
+            <br>
+
+            <!-- Questions -->
+            <h2><strong>Question 1</strong></h2>
+            <h4><strong>Your mind is always buzzing with unexplored ideas and plans.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 2</strong></h2>
+            <h4><strong>Generally speaking, you rely more on your experience than your imagination.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 3</strong></h2>
+            <h4><strong>You find it easy to stay relaxed and focused even when there is some pressure.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 4</strong></h2>
+            <h4><strong>You rarely do something just out of sheer curiosity.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 5</strong></h2>
+            <h4><strong>People can rarely upset you.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 6</strong></h2>
+            <h4><strong>It is often difficult for you to relate to other people’s feelings.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 7</strong></h2>
+            <h4><strong>In a discussion, truth should be more important than people’s sensitivities.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 8</strong></h2>
+            <h4><strong>You rarely get carried away by fantasies and ideas.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 9</strong></h2>
+            <h4><strong>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+
+            <h2><strong>Question 10</strong></h2>
+            <h4><strong>You feel more energetic after spending time with a group of people.</strong></h4>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="1" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              </label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button class="btn btn-secondary" type="submit">Submit</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $("#search-btn").on("click", function() {
+      var searchedCharacter = $("#character-search").val().trim();
+
+      // Using a RegEx Pattern to remove spaces from searchedCharacter
+      // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+      searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+
+      $.get("/api/people/" + searchedCharacter, function(data) {
+        console.log(data);
+        if (data) {
+          $("#stats").show();
+          $("#name").text(data.name);
+          $("#role").text(data.role);
+          $("#age").text(data.age);
+          $("#force-points").text(data.forcePoints);
+        } else {
+          $("#name").text(
+            "The force is not strong with this one. Your character was not found.");
+          $("#stats").hide();
+        }
+      });
+    });
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

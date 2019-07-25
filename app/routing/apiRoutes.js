@@ -7,6 +7,9 @@ var people = require("../data/friends.js");
 
 var router = express.Router();
 
+router.use(express.urlencoded({ extended: true }));
+router.use(express.json());
+
 // Displays all characters
 router.get("/api/friends", function(req, res) {
     return res.json(people);
@@ -16,6 +19,7 @@ router.get("/api/friends", function(req, res) {
 router.post("/api/friends", function(req, res) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body parsing middleware
+    console.log("YO");
     var newPerson = req.body;
   
   //   // Using a RegEx Pattern to remove spaces from newCharacter

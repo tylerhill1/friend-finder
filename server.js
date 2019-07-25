@@ -10,8 +10,6 @@ var PORT = 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-var people = require("./app/data/friends.js");
 // Routes
 // =============================================================
 
@@ -22,30 +20,6 @@ app.use(htmlRoutes);
 var apiRoutes = require("./app/routing/apiRoutes.js");
 
 app.use(apiRoutes);
-
-
-
-// Displays all characters
-app.get("/api/friends", function(req, res) {
-  return res.json(people);
-});
-
-// Create New Characters - takes in JSON input
-app.post("/api/friends", function(req, res) {
-  // req.body hosts is equal to the JSON post sent from the user
-  // This works because of our body parsing middleware
-  var newPerson = req.body;
-
-//   // Using a RegEx Pattern to remove spaces from newCharacter
-//   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-//   newPerson.routeName = newPerson.name.replace(/\s+/g, "").toLowerCase();
-
-  console.log(newPerson);
-
-  people.push(newPerson);
-
-  res.json(newPerson);
-});
 
 // Starts the server to begin listening
 // =============================================================

@@ -33,227 +33,249 @@
             <h3><strong>Survey</strong></h3>
           </div>
           <div class="card-body">
+          <form method="POST" role="form">
             <h3><strong>Name (Required)</strong></h3>
-            <input type="text" id="newName" class="form-control">
+            <input type="text" class="form-control" id="name" >
             <br>
             <h3><strong>Link to Photo Image (Required)</strong></h3>
-            <input type="text" id="newPhoto" class="form-control">
+            <input type="text" class="form-control" id="photo">
             <br>
 
             <!-- Questions -->
             <h2><strong>Question 1</strong></h2>
             <h4><strong>Your mind is always buzzing with unexplored ideas and plans.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q1">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 2</strong></h2>
             <h4><strong>Generally speaking, you rely more on your experience than your imagination.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q2">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 3</strong></h2>
             <h4><strong>You find it easy to stay relaxed and focused even when there is some pressure.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q3">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 4</strong></h2>
             <h4><strong>You rarely do something just out of sheer curiosity.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q4">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 5</strong></h2>
             <h4><strong>People can rarely upset you.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q5">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 6</strong></h2>
             <h4><strong>It is often difficult for you to relate to other people’s feelings.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q6">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 7</strong></h2>
             <h4><strong>In a discussion, truth should be more important than people’s sensitivities.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q7">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 8</strong></h2>
             <h4><strong>You rarely get carried away by fantasies and ideas.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q8">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 9</strong></h2>
             <h4><strong>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q9">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
 
             <h2><strong>Question 10</strong></h2>
             <h4><strong>You feel more energetic after spending time with a group of people.</strong></h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="1" autocomplete="off"> 1
+            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="Q10">
+              <label class="btn btn-secondary" id="1">
+                <input type="radio" class="form-control" name="options" id="1" autocomplete="off"> 1
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="2" autocomplete="off"> 2
+              <label class="btn btn-secondary" id="2">
+                <input type="radio" class="form-control" name="options" id="2" autocomplete="off"> 2
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="3" autocomplete="off"> 3
+              <label class="btn btn-secondary" id="3">
+                <input type="radio" class="form-control" name="options" id="3" autocomplete="off"> 3
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="4" autocomplete="off"> 4
+              <label class="btn btn-secondary" id="4">
+                <input type="radio" class="form-control" name="options" id="4" autocomplete="off"> 4
               </label>
-              <label class="btn btn-secondary">
-                <input type="radio" name="options" id="5" autocomplete="off"> 5
+              <label class="btn btn-secondary" id="5">
+                <input type="radio" class="form-control" name="options" id="5" autocomplete="off"> 5
               </label>
             </div>
             <br>
             <br>
             <br>
-            <button class="btn btn-secondary" type="submit">Submit</button>
+            <button class="btn btn-secondary" type="submit" id="submit"  data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
 
+            <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">HERE IS YOUR FRIEND</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </form>
           </div>
         </div>
       </div>
@@ -261,32 +283,54 @@
   </div>
 
   <script type="text/javascript">
-    $("#search-btn").on("click", function() {
-      var searchedCharacter = $("#character-search").val().trim();
+  
+    // Question: What does this code do?
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
 
-      // Using a RegEx Pattern to remove spaces from searchedCharacter
-      // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-      searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+      var first = parseFloat($("#Q1 .active").attr("id"));
+      var second = parseFloat($("#Q2 .active").attr("id"));
+      var third = parseFloat($("#Q3 .active").attr("id"));
+      var fourth = parseFloat($("#Q4 .active").attr("id"));
+      var fifth = parseFloat($("#Q5 .active").attr("id"));
+      var sixth = parseFloat($("#Q6 .active").attr("id"));
+      var seventh = parseFloat($("#Q7 .active").attr("id"));
+      var eighth = parseFloat($("#Q8 .active").attr("id"));
+      var ninth = parseFloat($("#Q9 .active").attr("id"));
+      var tenth = parseFloat($("#Q10 .active").attr("id"));
+      var test = [
+          first,
+          second,
+          third,
+          fourth,
+          fifth,
+          sixth,
+          seventh,
+          eighth,
+          ninth,
+          tenth
+        ]
+      var total = 0;
+      for (var i = 0; i<test.length; i++) {
+        total += test[i];
+      }
+      console.log(test);
+      var newPerson = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: test,
+        total: total
+      };
+      
 
-      $.get("/api/people/" + searchedCharacter, function(data) {
-        console.log(data);
-        if (data) {
-          $("#stats").show();
-          $("#name").text(data.name);
-          $("#role").text(data.role);
-          $("#age").text(data.age);
-          $("#force-points").text(data.forcePoints);
-        } else {
-          $("#name").text(
-            "The force is not strong with this one. Your character was not found.");
-          $("#stats").hide();
-        }
-      });
+      // Question: What does this code do??
+      $.post("/api/friends", newPerson)
+        .then(function(data) {
+          console.log("survey.html", data);
+          alert("Adding person...");
+        });
     });
-
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-</body>
+ </body>
 
 </html>

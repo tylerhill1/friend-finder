@@ -13,7 +13,8 @@ var people = [
           5,
           4,
           1
-        ]
+        ],
+        total: 32
     },
     {
       name: "Haven Helm",
@@ -29,7 +30,8 @@ var people = [
           3,
           2,
           1
-        ]
+        ],
+      total: 26
     },
     {
       name: "Sara Buckley",
@@ -45,7 +47,8 @@ var people = [
           1,
           1,
           1
-        ]
+        ],
+        total: 21
     },
     {
       name: "Brian Marchant",
@@ -61,7 +64,8 @@ var people = [
           2,
           1,
           1
-        ]
+        ],
+      total: 25
     },
     {
       name: "Ryan McCord",
@@ -76,8 +80,10 @@ var people = [
           1,
           5,
           5,
-          3
-        ]
+          1
+        ],
+      total: 30
+
     }
   ];
 

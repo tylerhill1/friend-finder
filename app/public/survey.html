@@ -260,17 +260,17 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">HERE IS YOUR FRIEND</h5>
+          <h5 class="modal-title" id="exampleModalLongTitle">Your Best Match</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <h1 id="matchName"></h1>
+          <img id="matchPhoto" style="max-width:300px; height:auto"></img>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -283,7 +283,96 @@
   </div>
 
   <script type="text/javascript">
-  
+   
+   var people = [
+    {
+      name: "Jose Canchan",
+      photo: "https://images.freeimages.com/images/large-previews/a61/vikingland-1316664.jpg",
+      scores:[
+          5,
+          1,
+          4,
+          4,
+          5,
+          1,
+          2,
+          5,
+          4,
+          1
+        ],
+        total: 32
+    },
+    {
+      name: "Haven Helm",
+      photo: "https://images.freeimages.com/images/large-previews/a61/vikingland-1316664.jpg",
+      scores:[
+          3,
+          2,
+          5,
+          4,
+          1,
+          1,
+          4,
+          3,
+          2,
+          1
+        ],
+      total: 26
+    },
+    {
+      name: "Sara Buckley",
+      photo: "https://images.freeimages.com/images/large-previews/a61/vikingland-1316664.jpg",
+      scores:[
+          2,
+          3,
+          1,
+          4,
+          5,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        total: 21
+    },
+    {
+      name: "Brian Marchant",
+      photo: "https://images.freeimages.com/images/large-previews/a61/vikingland-1316664.jpg",
+      scores:[
+          5,
+          4,
+          1,
+          2,
+          3,
+          5,
+          1,
+          2,
+          1,
+          1
+        ],
+      total: 25
+    },
+    {
+      name: "Ryan McCord",
+      photo: "https://images.freeimages.com/images/large-previews/a61/vikingland-1316664.jpg",
+      scores:[
+          5,
+          5,
+          4,
+          2,
+          1,
+          1,
+          1,
+          5,
+          5,
+          1
+        ],
+      total: 30
+
+    }
+  ];
+
     // Question: What does this code do?
     $("#submit").on("click", function(event) {
       event.preventDefault();
@@ -321,13 +410,28 @@
         scores: test,
         total: total
       };
-      
+    
+      var matchedName = "";
+      var matchedPhoto = "";
+      var bestDiff = 100;
+      for (var i=0; i<people.length; i++) {
+        var personsTotal = parseInt(people[i].total);
+        var diff = Math.abs(total - personsTotal);
+        if (diff < bestDiff) {
+          bestDiff = diff;
+          matchedName = people[i].name;
+          matchedPhoto = people[i].photo;
+        }
+      }
+      alert("name: " + matchedName);
+      alert("photo: " + matchedPhoto);
+      $("#matchName").append(matchedName);
+      $("#matchPhoto").attr("src",matchedPhoto);
 
       // Question: What does this code do??
       $.post("/api/friends", newPerson)
         .then(function(data) {
           console.log("survey.html", data);
-          alert("Adding person...");
         });
     });
   </script>
